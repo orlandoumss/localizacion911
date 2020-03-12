@@ -1,0 +1,26 @@
+<div class="search-geo">
+<mat-form-field class="menu-buscar" appearance="fill" >
+
+  <mat-label>Buscar</mat-label>
+  <input  type="text"
+          placeholder="Uteppi"
+          aria-label="Number"
+          matInput
+          [formControl]= "searchGeo"
+          [matAutocomplete]= "autoSearch"
+          (keydown.enter) = "localizarPunto($event)">
+  <mat-autocomplete #autoSearch = "matAutocomplete" >
+    <mat-option *ngFor = "let dato of filterLocalizacion | async" [value]= "dato">
+      {{dato}}
+    </mat-option>
+  </mat-autocomplete>
+
+
+</mat-form-field>
+<mat-nav-list class="link-search">
+  <a  mat-list-item routerLinkActive = "active" (click) = "localizarPunto($event)">
+    <mat-icon class="ico-search" aria-hidden="false" aria-label="Example heart icon">search</mat-icon>
+  </a>
+</mat-nav-list>
+
+</div>

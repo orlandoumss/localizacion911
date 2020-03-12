@@ -1,0 +1,76 @@
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.7em 0px !important;}
+::ng-deep .mat-form-field-label-wrapper { top: -0.8em; margin-top: -4px;}
+
+
+.logueo{
+  width: 370px;
+  display: flex;
+
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* height: 120px; */
+}
+.logueo-form{
+  background-color: #e4e5e2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  /* flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+.logueo-full-width{
+  /* background-color: #E0E0E0; */
+  flex-grow: 1;
+  /* width: 100px; */
+
+}
+
+.input-form{
+  background-color: #e4e5e2;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.form-login{
+  /* background-color: #6f2d83; */
+  width: 90%;
+  height: 50px;
+  background-color: #bfc0c0;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  /*height: 50px; */
+  border-radius: 5px;
+}
+.form-login input{
+  background: transparent ;
+  color: #0c0c0c;
+  text-decoration:none;
+  background: transparent;
+}
+
+.form-login mat-label{
+  /* background-color: red; */
+  padding: 0px;
+  color: black;
+
+}
+
+.form-login mat-icon{
+  /* background-color: #2d8369; */
+  background: transparent;
+}
+
+.boton-login{
+  background-color: #2d8369;
+  width: 100%;
+}
+
